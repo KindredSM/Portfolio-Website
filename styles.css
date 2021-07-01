@@ -1,151 +1,140 @@
-
 body {
-size: 100vh;
-
+    margin: 0;
 }
 
-.projects {
-  
+h1,
+h2,
+h3,
+h4,
+h6,
+.des1,
+ul {
+    font-family: "Lato", sans-serif;
 }
 
-
-
-h1, h2, h3, h4, h6,.des1, ul {
-    font-family: 'Lato', sans-serif; }
-    
-
-
-h1, h2 {
-    display: flex;
-    justify-content: center;
+h1,
+h2 {
+    text-align: center;
     font-weight: 900;
     margin-top: 50px;
     font-size: 70px;
-    
 }
 
 h1 {
-    color: #FF185E;
-    
+    color: #ff185e;
 }
 
 h2 {
     font-size: 50px;
-    color: white;    
+    color: white;
 }
 
-
 h3 {
-  display: block;
-  padding: 30px 0px 30px 0px;
-  margin: 0px 300px 0px 300px;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 25px;
-  margin-top: 100px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-width: 3px;
-  border-color: #FF185E;
-  border-style: solid;
-  color: white; 
+    display: block;
+    padding: 30px 0px 30px 0px;
+    width: min(80%, 600px);
+    /* You can use operators like this to set a standard width and a max width */
+
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: 3px;
+    border-color: #ff185e;
+    border-style: solid;
+    color: white;
+    transition: ease 1s;
 }
 
 h3:hover {
-  background-color: #FF185E;
-  transition: ease 1s;
-  
-  
+    background-color: #ff185e;
 }
 
-
-
 h4 {
-  color: white;
-  font-weight: 900;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  
-  
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 h5 {
-  border-bottom: solid #FF185E 3px;
-  border-radius: 30%;
-  display: flex;
-  justify-content: center;
-  margin-left: 850px;
-  margin-right: 850px;
+    border-bottom: solid #ff185e 3px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 850px;
+    margin-right: 850px;
 }
 
-
 h6 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .des1 {
-  color: white;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
     list-style-type: none;
     display: flex;
-    justify-content:right;
+    justify-content: right;
     margin: auto;
-    width: 1750px;
     padding-right: 50px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-size: 20px;
-    
-    
-  }
-  
-  
-  li a {
+}
+
+li a {
     display: block;
-    color:white;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 5%;
+    transition: ease 1s;
 }
 
 li a:hover {
-    background-color: #FF185E;
-    transition: ease 1s;
+    background-color: #ff185e;
     color: black;
+}
 
-    
-  }
+li a:hover:not(.active) {
+    background-color: #ff185e;
+}
 
-  li a:hover:not(.active) {
-    background-color: #FF185E;
-  }
-  
-  .active {
-   border-bottom: solid #FF185E 2px;
-   border-bottom-style: dotted;
-    
-  }
-  
+.active {
+    border-bottom: solid #ff185e 2px;
+    border-bottom-style: dotted;
+}
+
 body {
     background-color: black;
 }
 
-
-    
+/* if you are centering a bunch of itmes create a container then use flex to align them */
+.title-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-cont div {
+    width: 240px;
+}
 
 .button {
-    background-color: #FF185E;
+    background-color: #ff185e;
     border: none;
     border-radius: 5%;
     color: white;
@@ -156,54 +145,48 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 775px;
-    
-  }
+    transition: ease 1s;
+    /* transitions should be on the item not the hover item otherwise the animation flickers off when you remove your mouse */
+}
 
-  .btn {
-    
-    border: solid #FF185E 3px;
+.btn {
+    border: solid #ff185e 3px;
     border-radius: 5%;
-    color: #FF185E;
+    color: #ff185e;
     padding: 12px 29px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: #FF185E;
-    color: black;
     transition: ease 1s;
-  }
-  
-  .button:hover {
-  background-color: #FF185E;
-  color: black;
-  transition: ease 1s;
-  }
+}
+
+.btn:hover {
+    background-color: #ff185e;
+    color: black;
+}
+
+.button:hover {
+    background-color: #ff185e;
+    color: black;
+}
 
 .pic1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-top: 50px;
-  border: solid #FF185E 3px;
-  width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 50px;
+    border: solid #ff185e 3px;
+    width: 300px;
 }
 
 .github {
-  display: block;
-  
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 50px;
-  
-   
-}
+    display: block;
 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50px;
+}
